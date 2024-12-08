@@ -31,7 +31,7 @@ Modern mobile devices are indispensable, yet they often face limitations due to 
 ## Project Structure
 
 - `user_behavior_dataset.csv` : Input data file  
-- `analysis_script.py` : Main Python script for data loading, preprocessing, modeling, and evaluation  
+- `final_project.ipynb` : Main Python script in a jupyter notebook file for data loading, preprocessing, modeling, and evaluation  
 - `requirements.txt` : Python dependencies required for this project  
 - `README.md` : Project documentation (this file)
 
@@ -39,7 +39,7 @@ Modern mobile devices are indispensable, yet they often face limitations due to 
 
 ### 1. Creating the Virtual Environment
 
-To isolate project dependencies, it is recommended to use a Python virtual environment:
+To isolate project dependencies, it is recommended to use a Python virtual environment(or just upload the files into a jupyter notebook online if you dont have a python virtual environment):
 
 ```bash
 python3 -m venv venv
@@ -71,7 +71,7 @@ This ensures you have the correct versions of `pandas`, `numpy`, `scikit-learn`,
 ### 4. Running the Analysis
 
 1. **Data Preprocessing & Modeling:**  
-   Run `analysis_script.py` to:
+   Run `final_project.ipynb` to:
    - Load and preprocess the dataset
    - Perform exploratory data analysis (EDA)
    - Insert processed data into a PostgreSQL database (if configured)
@@ -79,7 +79,7 @@ This ensures you have the correct versions of `pandas`, `numpy`, `scikit-learn`,
    - Evaluate model performance and visualize results
 
    ```bash
-   python analysis_script.py
+   python final_project.ipynb
    ```
 
 2. **Exploring Results:**  
