@@ -1,4 +1,4 @@
-# Predicting-User-Behavior-and-Battery-Consumption-Patterns-on-Mobile-Devices
+# Predicting User Behavior and Battery Consumption Patterns on Mobile Devices
 
 ## Overview
 
@@ -16,74 +16,56 @@ Modern mobile devices are indispensable, yet they often face limitations due to 
 
 ## Dataset
 
-- The dataset, `user_behavior_dataset.csv`, includes features such as:
-  - **Operating System**  
-  - **Device Model**  
-  - **App Usage Time (min/day)**  
-  - **Screen On Time (hours/day)**  
-  - **Battery Drain (mAh/day)**  
-  - **Number of Apps Installed**  
-  - **Data Usage (MB/day)**  
-  - **User Behavior Class**
+The dataset, `user_behavior_dataset.csv`, includes features such as:
 
-  Before running the code, ensure that this dataset is placed in the project directory.
+- **Operating System**  
+- **Device Model**  
+- **App Usage Time (min/day)**  
+- **Screen On Time (hours/day)**  
+- **Battery Drain (mAh/day)**  
+- **Number of Apps Installed**  
+- **Data Usage (MB/day)**  
+- **User Behavior Class**
+
+Ensure that the dataset is uploaded to the Codebench environment before running the notebook.
 
 ## Project Structure
 
-- `user_behavior_dataset.csv` : Input data file  
-- `final_project.ipynb` : Main Python script in a jupyter notebook file for data loading, preprocessing, modeling, and evaluation  
-- `requirements.txt` : Python dependencies required for this project  
-- `README.md` : Project documentation (this file)
+- `user_behavior_dataset.csv`: Input data file  
+- `final_project.ipynb`: Main Jupyter Notebook for data loading, preprocessing, modeling, and evaluation  
+- `README.md`: Project documentation (this file)
 
 ## Setup Instructions
 
-### 1. Creating the Virtual Environment
+### 1. Running the Notebook on Codebench
 
-To isolate project dependencies, it is recommended to use a Python virtual environment(or just upload the files into a jupyter notebook online if you dont have a python virtual environment):
+1. Log in to Codebench and navigate to the Jupyter Notebook interface.
+2. Upload the following files to your workspace:
+   - `final_project.ipynb`
+   - `user_behavior_dataset.csv`
+3. Open `final_project.ipynb` in the Jupyter Notebook interface.
 
-```bash
-python3 -m venv venv
+### 2. Installing Required Libraries
+
+All necessary libraries are included in the notebook's import statements. If any dependencies are missing, install them directly in a Jupyter Notebook cell using `pip` commands. Use the following command to install required dependencies:
+
+```python
+!pip install pandas numpy scikit-learn matplotlib seaborn psycopg2-binary
 ```
 
-### 2. Activating the Virtual Environment
 
-Activate the virtual environment with the following command:
+### 3. Running the Notebook
 
-- On macOS/Linux:
-  ```bash
-  source ./venv/bin/activate
-  ```
-- On Windows:
-  ```bash
-  .\venv\Scripts\activate
-  ```
-
-### 3. Installing Required Libraries
-
-All necessary libraries are listed in the `requirements.txt` file. To install them, run:
-
-```bash
-pip install -r requirements.txt
-```
-
-This ensures you have the correct versions of `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `psycopg2`, and any other dependencies.
-
-### 4. Running the Analysis
-
-1. **Data Preprocessing & Modeling:**  
+1. **Execute the cells in final_project.ipynb step-by-step:**  
    Run `final_project.ipynb` to:
    - Load and preprocess the dataset
    - Perform exploratory data analysis (EDA)
-   - Insert processed data into a PostgreSQL database (if configured)
    - Train classification and regression models
    - Evaluate model performance and visualize results
 
-   ```bash
-   python final_project.ipynb
-   ```
 
 2. **Exploring Results:**  
-   After running the script, generated plots and summaries will help you understand:
+   After running the code, generated plots and summaries will help you understand:
    - The distribution and correlations of features
    - The accuracy and F1 scores of classification models
    - The MAE and RMSE of regression models
@@ -92,7 +74,7 @@ This ensures you have the correct versions of `pandas`, `numpy`, `scikit-learn`,
 ## Results & Insights
 
 - **User Behavior Classification:** The model classifies users based on their usage patterns, helping identify which activities are most indicative of higher battery drain.
-- **Predictive Accuracy:** Classification and regression metrics indicate the reliability of the predictive models in identifying and quantifying battery usage behavior.
+- **Predictive Accuracy:** Metrics such as accuracy, F1 scores, MAE, and RMSE indicate the reliability of the predictive models in identifying and quantifying battery usage behavior.
 - **Feature Importance:** Identifying which features (e.g., screen-on time, app usage) contribute the most to battery drain can guide more targeted optimization strategies.
 
 ## Future Work
