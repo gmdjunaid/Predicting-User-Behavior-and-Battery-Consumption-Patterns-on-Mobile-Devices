@@ -1,5 +1,6 @@
 # Predicting User Behavior and Battery Consumption Patterns on Mobile Devices
 
+
 ## Overview
 
 This project focuses on understanding user behavior on mobile devices and identifying the key factors influencing battery consumption. With mobile devices increasingly central to daily life—serving as primary tools for work, communication, and entertainment—battery life has become a critical performance metric. By leveraging advanced analytics and machine learning methods, this project aims to reveal insights into how different usage patterns contribute to battery drain, and how those insights can inform more targeted and effective battery optimization strategies.
@@ -16,7 +17,7 @@ Modern mobile devices are indispensable, yet they often face limitations due to 
 
 ## Dataset
 
-The dataset, `user_behavior_dataset.csv`, includes features such as:
+The dataset, [The Mobile Device Usage and User Behavior Dataset](https://www.kaggle.com/datasets/valakhorasani/mobile-device-usage-and-user-behavior-dataset?resource=download), includes features such as:
 
 - **Operating System**  
 - **Device Model**  
