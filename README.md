@@ -17,7 +17,7 @@ Modern mobile devices are indispensable, yet they often face limitations due to 
 
 ## Dataset
 
-The dataset, [The Mobile Device Usage and User Behavior Dataset](https://www.kaggle.com/datasets/valakhorasani/mobile-device-usage-and-user-behavior-dataset?resource=download), includes features such as:
+The dataset, which can be found on Kaggle: [The Mobile Device Usage and User Behavior Dataset](https://www.kaggle.com/datasets/valakhorasani/mobile-device-usage-and-user-behavior-dataset?resource=download), includes features such as:
 
 - **Operating System**  
 - **Device Model**  
